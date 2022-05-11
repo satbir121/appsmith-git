@@ -1,0 +1,280 @@
+{
+  "unpublishedPage": {
+    "name": "Page1 Copy",
+    "slug": "page1-copy",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 4896,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 1290,
+          "containerStyle": "none",
+          "snapRows": 125,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 57,
+          "minHeight": 1292,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "widgetName": "Table1",
+              "defaultPageSize": 0,
+              "columnOrder": [
+                "price",
+                "quantity",
+                "customColumn1"
+              ],
+              "isVisibleDownload": true,
+              "dynamicPropertyPathList": [],
+              "displayName": "Table",
+              "iconSVG": "/static/media/icon.db8a9cbd.svg",
+              "topRow": 2,
+              "bottomRow": 42,
+              "isSortable": true,
+              "parentRowSpace": 10,
+              "type": "TABLE_WIDGET",
+              "defaultSelectedRow": "0",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [],
+              "dynamicBindingPathList": [
+                {
+                  "key": "primaryColumns.price.computedValue"
+                },
+                {
+                  "key": "primaryColumns.quantity.computedValue"
+                },
+                {
+                  "key": "derivedColumns.customColumn1.computedValue"
+                },
+                {
+                  "key": "primaryColumns.customColumn1.computedValue"
+                }
+              ],
+              "leftColumn": 5,
+              "primaryColumns": {
+                "customColumn1": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "customColumn1",
+                  "horizontalAlignment": "LEFT",
+                  "columnType": "text",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "customColumn1",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( Math.max(currentRow.price, currentRow.quantity)))}}",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "buttonColor": "#03B365",
+                  "menuColor": "#03B365",
+                  "labelColor": "#FFFFFF"
+                },
+                "price": {
+                  "index": 0,
+                  "width": 150,
+                  "id": "price",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "price",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.price))}}"
+                },
+                "quantity": {
+                  "index": 1,
+                  "width": 150,
+                  "id": "quantity",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textSize": "PARAGRAPH",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "quantity",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( currentRow.quantity))}}"
+                }
+              },
+              "delimiter": ",",
+              "onRowSelected": "",
+              "key": "3zaqy090em",
+              "derivedColumns": {
+                "customColumn1": {
+                  "index": 4,
+                  "width": 150,
+                  "id": "customColumn1",
+                  "horizontalAlignment": "LEFT",
+                  "columnType": "text",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "customColumn1",
+                  "computedValue": "{{Table1.sanitizedTableData.map((currentRow) => ( Math.max(currentRow.price, currentRow.quantity)))}}",
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "buttonColor": "#03B365",
+                  "menuColor": "#03B365",
+                  "labelColor": "#FFFFFF"
+                }
+              },
+              "rightColumn": 59,
+              "textSize": "PARAGRAPH",
+              "widgetId": "3iot2xysj6",
+              "isVisibleFilters": true,
+              "tableData": "[\n\t{\n\t\t\"price\": 100,\n\t\t\"quantity\": 1000\n\t}, {\n\t\t\"price\": 100,\n\t\t\"quantity\": 1000\n\t}\n]",
+              "isVisible": true,
+              "label": "Data",
+              "searchKey": "",
+              "enableClientSideSearch": true,
+              "version": 3,
+              "totalRecordsCount": 0,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "horizontalAlignment": "LEFT",
+              "isVisibleSearch": true,
+              "isVisiblePagination": true,
+              "verticalAlignment": "CENTER",
+              "columnSizeMap": {
+                "task": 245,
+                "step": 62,
+                "status": 75
+              }
+            },
+            {
+              "widgetName": "Audio1",
+              "rightColumn": 35,
+              "displayName": "Audio",
+              "iconSVG": "/static/media/icon.cb54df7a.svg",
+              "widgetId": "p9zuchoosa",
+              "topRow": 48,
+              "bottomRow": 52,
+              "parentRowSpace": 10,
+              "isVisible": true,
+              "type": "AUDIO_WIDGET",
+              "version": 1,
+              "url": "https://assets.appsmith.com/widgets/birds_chirping.mp3",
+              "hideCard": false,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "leftColumn": 7,
+              "autoPlay": false,
+              "key": "u701g5y615"
+            },
+            {
+              "widgetName": "MapChart1",
+              "data": [
+                {
+                  "id": "NA",
+                  "value": ".82"
+                },
+                {
+                  "id": "SA",
+                  "value": "2.04"
+                },
+                {
+                  "id": "AS",
+                  "value": "1.78"
+                },
+                {
+                  "id": "EU",
+                  "value": ".40"
+                },
+                {
+                  "id": "AF",
+                  "value": "2.58"
+                },
+                {
+                  "id": "AU",
+                  "value": "1.30"
+                }
+              ],
+              "colorRange": [
+                {
+                  "minValue": 0.5,
+                  "maxValue": 1,
+                  "code": "#FFD74D"
+                },
+                {
+                  "minValue": 1,
+                  "maxValue": 2,
+                  "code": "#FB8C00"
+                },
+                {
+                  "minValue": 2,
+                  "maxValue": 3,
+                  "code": "#E65100"
+                }
+              ],
+              "isCanvas": false,
+              "displayName": "Map Chart",
+              "iconSVG": "/static/media/icon.16600780.svg",
+              "topRow": 64,
+              "bottomRow": 97,
+              "parentRowSpace": 10,
+              "type": "MAP_CHART_WIDGET",
+              "hideCard": false,
+              "mapTitle": "Global Population",
+              "parentColumnSpace": 12.5625,
+              "leftColumn": 13,
+              "key": "kd3hdkpoj2",
+              "rightColumn": 63,
+              "widgetId": "skx4hpzmw6",
+              "mapType": "WORLD",
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "showLabels": true
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "widgetNames": [
+          "Audio1",
+          "MainContainer",
+          "MapChart1",
+          "Table1"
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Page1 Copy",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": []
+  },
+  "deleted": false,
+  "policies": [],
+  "gitSyncId": "627b66980b47255c28136cc9_627b68b20b47255c28136d7f"
+}
